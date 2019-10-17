@@ -1,0 +1,3 @@
+{% for note in notes %}
+<p>{{note}} <a href='{{ note.get_delete_url }}'>Delete</a> <a href='{{ note.get_update_url }}'>Update</a></p>
+{% endfor %}
